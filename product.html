@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ecommerce</title>
+	<link rel="stylesheet" type="text/css" href="./assets/scss/main.css">
+	<link rel="stylesheet" href="./assets/scss/bootstrap.css">
+	<link rel="stylesheet" href="./assets/scss/slick.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+		rel="stylesheet">
+</head>
+
+<style>
+</style>
+
+<body>
+	<nav>
+		<div class="top-nav">
+			<div class="container">
+				<div class="top-nav-wrapper">
+					<div class="logo">
+						<a href="./index.html"><img src="./assets/img/logo.png" alt=""></a>
+					</div>
+					<form>
+						<div class="form-group">
+							<div class="input-group">
+								<input type="text" class="form-control" id="validationCustomUsername"
+									placeholder="Search" aria-describedby="inputGroupPrepend" required>
+
+								<div class="input-group-prepend">
+									<button class="btns primary input-group-text" id="inputGroupPrepend"><i
+											class="fa fa-search" aria-hidden="true"></i></button>
+								</div>
+								<div class="invalid-feedback">
+									Please choose a username.
+								</div>
+								<!-- <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Search"> -->
+							</div>
+						</div>
+					</form>
+					<ul class="top-right m-l">
+						<li class="notfy shoping-icons">
+							<button href="#" id="cart-menu">
+								<img src="./assets/svg/cart.svg" style="width: 50px;" alt="">
+								<span class="total-count" id="items-basket"></span>
+							</button>
+						</li>
+						<li class="notfy shoping-icons">
+							<button href="">
+								<img src="./assets/svg/login.svg" style="width: 50px;" alt="">
+								<!-- <span>1</span> -->
+							</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="navbar navbar-expand-lg">
+			<div class="container">
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Home</a>
+						</li>
+						<li class="nav-item multi-menu active">
+							<a class="nav-link catogery" href="#">
+								Products</a>
+							<ul class="menu">
+								<li><a href="./product.html">Garam masala</a></li>
+								<li><a href="./product.html">Garam masala</a></li>
+								<li><a href="./product.html">Garam masala</a></li>
+								<li><a href="./product.html">Garam masala</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	<section>
+		<div class="left-side-nav">
+			<span href="#" class="left-menu" id="menu1"><i class="fa fa-filter" aria-hidden="true"></i></span>
+			<article class="filter-group">
+				<header class="card-header"> <a href="#" data-toggle="collapse" data-target="#collapse_aside1"
+						data-abc="true" aria-expanded="true" class=""> <i class="icon-control fa fa-chevron-down"></i>
+						<h6 class="title">Categories </h6>
+					</a> </header>
+				<div class="filter-content collapse show" id="collapse_aside1" style="">
+					<div class="card-body">
+						<ul class="list-menu">
+							<li><a href="#" data-abc="true">Electronics </a></li>
+							<li><a href="#" data-abc="true">Watches </a></li>
+							<li><a href="#" data-abc="true">Laptops </a></li>
+							<li><a href="#" data-abc="true">Clothes </a></li>
+							<li><a href="#" data-abc="true">Accessories </a></li>
+						</ul>
+					</div>
+				</div>
+			</article>
+			<article class="filter-group">
+				<header class="card-header"> <a href="#" data-toggle="collapse" data-target="#collapse_aside2"
+						data-abc="true" aria-expanded="false" class="collapsed"> <i
+							class="icon-control fa fa-chevron-down"></i>
+						<h6 class="title">Price </h6>
+					</a> </header>
+				<div class="filter-content collapse" id="collapse_aside2" style="">
+					<div class="card-body"> <input type="range" class="custom-range" min="0" max="100" name="">
+						<div class="form-row">
+							<div class="form-group col-md-6"> <label>Min</label> <input class="form-control"
+									placeholder="$0" type="number"> </div>
+							<div class="form-group text-right col-md-6"> <label>Max</label> <input class="form-control"
+									placeholder="$1,0000" type="number"> </div>
+						</div> <a href="#" class="btns white" data-abc="true">Apply Now</a>
+					</div>
+				</div>
+			</article>
+			<article class="filter-group">
+				<header class="card-header"> <a href="#" data-toggle="collapse" data-target="#collapse_aside3"
+						data-abc="true" aria-expanded="false" class="collapsed"> <i
+							class="icon-control fa fa-chevron-down"></i>
+						<h6 class="title">Size </h6>
+					</a> </header>
+				<div class="filter-content collapse" id="collapse_aside3" style="">
+					<div class="card-body"> <label class="checkbox-btns"> <input type="checkbox"> <span
+								class="btns white"> XS </span> </label> <label class="checkbox-btns"> <input
+								type="checkbox"> <span class="btns white"> SM </span> </label> <label
+							class="checkbox-btns"> <input type="checkbox"> <span class="btns white"> LG </span>
+						</label> <label class="checkbox-btns"> <input type="checkbox"> <span class="btns white">
+								XXL </span> </label> <label class="checkbox-btns"> <input type="checkbox"> <span
+								class="btns white"> XXXL </span> </label> </div>
+				</div>
+			</article>
+			<article class="filter-group">
+				<header class="card-header"> <a href="#" data-toggle="collapse" data-target="#collapse_aside4"
+						data-abc="true" class="collapsed" aria-expanded="false"> <i
+							class="icon-control fa fa-chevron-down"></i>
+						<h6 class="title">Rating </h6>
+					</a> </header>
+				<div class="filter-content collapse" id="collapse_aside4" style="">
+					<div class="card-body"> <label class="custom-control">
+							<input type="checkbox" class="custom-control-input">
+							<div class="custom-control-label">Better </div>
+						</label> <label class="custom-control">
+							<input type="checkbox" class="custom-control-input">
+							<div class="custom-control-label">Best </div>
+						</label> <label class="custom-control">
+							<input type="checkbox" class="custom-control-input">
+							<div class="custom-control-label">Good</div>
+						</label> <label class="custom-control">
+							<input type="checkbox" class="custom-control-input">
+							<div class="custom-control-label">Not good</div>
+						</label>
+					</div>
+				</div>
+			</article>
+		</div>
+		<div class="cart-box">
+			<h4>Cart Items</h4>
+			<hr>
+			<div id="new">
+				<ol id="list-item">
+				</ol>
+
+				<hr>
+				<div class="total-text">
+					<p>Total: </p>
+					<p id="total-price"></p>
+				</div>
+
+			</div>
+
+		</div>
+		<div class="product-container pb-4">
+			<br>
+			<div class='product-wrapper'>
+				<div class='medium loade'>
+					<div class='product-image'>
+						<img src='./assets/img/product (1).jpg'>
+					</div>
+					<div class='product-text'>
+						<h6>Curry powder</h6>
+						<p>Curry powder is a spice mix originating from the Indian subcontinent.</p>
+						<div class="d-flex">
+							<p> <b> ₹399 </b> </p>
+							<p class="wrong"> ₹599 </p>
+							<p class="green"> 33% off </p>
+						</div>
+						<button class="btns primary" data-toggle="modal" data-target="#exampleModal"><i
+								class="fa fa-eye" aria-hidden="true"></i></button>
+						<button class="btns primary item" style="position: relative; overflow: hidden;">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<div class="content" style="position: absolute;">
+								<h4>RAZER BLADE - FULL HD</h4>
+								<div class="prices">
+									<p class="price">1899</p>
+								</div>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class='small loade'>
+					<div class='product-image'>
+						<img src='./assets/img/product (1).webp'>
+					</div>
+					<div class='product-text'>
+						<h6>Curry powder</h6>
+						<p>Curry powder is a spice mix originating from the Indian subcontinent.</p>
+
+						<div class="d-flex">
+							<p> <b> ₹399 </b> </p>
+							<p class="wrong"> ₹599 </p>
+							<p class="green"> 33% off </p>
+						</div>
+						<button class="btns primary" data-toggle="modal" data-target="#exampleModal"><i
+								class="fa fa-eye" aria-hidden="true"></i></button>
+
+						<button class="btns primary item" style="position: relative; overflow: hidden;">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<div class="content" style="position: absolute;">
+								<h4>RAZER BLADE - FULL HD</h4>
+								<div class="prices">
+									<p class="price">1899</p>
+								</div>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class='small loade'>
+					<div class='product-image'>
+						<img src='./assets/img/product (2).jpg'>
+					</div>
+					<div class='product-text'>
+						<h6>Curry powder</h6>
+						<p>Curry powder is a spice mix originating from the Indian subcontinent.</p>
+
+						<div class="d-flex">
+							<p> <b> ₹399 </b> </p>
+							<p class="wrong"> ₹599 </p>
+							<p class="green"> 33% off </p>
+						</div>
+						<button class="btns primary" data-toggle="modal" data-target="#exampleModal"><i
+								class="fa fa-eye" aria-hidden="true"></i></button>
+
+						<button class="btns primary item" style="position: relative; overflow: hidden;">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<div class="content" style="position: absolute;">
+								<h4>RAZER BLADE - FULL HD</h4>
+								<div class="prices">
+									<p class="price">1899</p>
+								</div>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class='large loade'>
+					<div class='product-image'>
+						<img src='./assets/img/product (3).jpg'>
+					</div>
+					<div class='product-text'>
+						<h6>Curry powder</h6>
+						<p>Curry powder is a spice mix originating from the Indian subcontinent.</p>
+
+						<div class="d-flex">
+							<p> <b> ₹399 </b> </p>
+							<p class="wrong"> ₹599 </p>
+							<p class="green"> 33% off </p>
+						</div>
+						<button class="btns primary" data-toggle="modal" data-target="#exampleModal"><i
+								class="fa fa-eye" aria-hidden="true"></i></button>
+
+						<button class="btns primary item" style="position: relative; overflow: hidden;">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<div class="content" style="position: absolute;">
+								<h4>RAZER BLADE - FULL HD</h4>
+								<div class="prices">
+									<p class="price">1899</p>
+								</div>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class='small loade'>
+					<div class='product-image'>
+						<img src='./assets/img/product (3).jpg'>
+					</div>
+					<div class='product-text'>
+						<h6>Curry powder</h6>
+						<p>Curry powder is a spice mix originating from the Indian subcontinent.</p>
+
+						<div class="d-flex">
+							<p> <b> ₹399 </b> </p>
+							<p class="wrong"> ₹599 </p>
+							<p class="green"> 33% off </p>
+						</div>
+						<button class="btns primary" data-toggle="modal" data-target="#exampleModal"><i
+								class="fa fa-eye" aria-hidden="true"></i></button>
+
+						<button class="btns primary item" style="position: relative; overflow: hidden;">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<div class="content" style="position: absolute;">
+								<h4>RAZER BLADE - FULL HD</h4>
+								<div class="prices">
+									<p class="price">1899</p>
+								</div>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class='large loade'>
+					<div class='product-image'>
+						<img src='./assets/img/product (3).jpg'>
+					</div>
+					<div class='product-text'>
+						<h6>Curry powder</h6>
+						<p>Curry powder is a spice mix originating from the Indian subcontinent.</p>
+
+						<div class="d-flex">
+							<p> <b> ₹399 </b> </p>
+							<p class="wrong"> ₹599 </p>
+							<p class="green"> 33% off </p>
+						</div>
+						<button class="btns primary" data-toggle="modal" data-target="#exampleModal"><i
+								class="fa fa-eye" aria-hidden="true"></i></button>
+
+						<button class="btns primary item" style="position: relative; overflow: hidden;">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<div class="content" style="position: absolute;">
+								<h4>RAZER BLADE - FULL HD</h4>
+								<div class="prices">
+									<p class="price">1899</p>
+								</div>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class='small loade'>
+					<div class='product-image'>
+						<img src='./assets/img/product (3).jpg'>
+					</div>
+					<div class='product-text'>
+						<h6>Curry powder</h6>
+						<p>Curry powder is a spice mix originating from the Indian subcontinent.</p>
+
+						<div class="d-flex">
+							<p> <b> ₹399 </b> </p>
+							<p class="wrong"> ₹599 </p>
+							<p class="green"> 33% off </p>
+						</div>
+						<button class="btns primary" data-toggle="modal" data-target="#exampleModal"><i
+								class="fa fa-eye" aria-hidden="true"></i></button>
+
+						<button class="btns primary item" style="position: relative; overflow: hidden;">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<div class="content" style="position: absolute;">
+								<h4>RAZER BLADE - FULL HD</h4>
+								<div class="prices">
+									<p class="price">1899</p>
+								</div>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class='large loade'>
+					<div class='product-image'>
+						<img src='./assets/img/product (3).jpg'>
+					</div>
+					<div class='product-text'>
+						<h6>Curry powder</h6>
+						<p>Curry powder is a spice mix originating from the Indian subcontinent.</p>
+
+						<div class="d-flex">
+							<p> <b> ₹399 </b> </p>
+							<p class="wrong"> ₹599 </p>
+							<p class="green"> 33% off </p>
+						</div>
+						<button class="btns primary" data-toggle="modal" data-target="#exampleModal"><i
+								class="fa fa-eye" aria-hidden="true"></i></button>
+
+						<button class="btns primary item" style="position: relative; overflow: hidden;">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<div class="content" style="position: absolute;">
+								<h4>RAZER BLADE - FULL HD</h4>
+								<div class="prices">
+									<p class="price">1899</p>
+								</div>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class='small loade'>
+					<div class='product-image'>
+						<img src='./assets/img/product (3).jpg'>
+					</div>
+					<div class='product-text'>
+						<h6>Curry powder</h6>
+						<p>Curry powder is a spice mix originating from the Indian subcontinent.</p>
+
+						<div class="d-flex">
+							<p> <b> ₹399 </b> </p>
+							<p class="wrong"> ₹599 </p>
+							<p class="green"> 33% off </p>
+						</div>
+						<button class="btns primary" data-toggle="modal" data-target="#exampleModal"><i
+								class="fa fa-eye" aria-hidden="true"></i></button>
+
+						<button class="btns primary item" style="position: relative; overflow: hidden;">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<div class="content" style="position: absolute;">
+								<h4>RAZER BLADE - FULL HD</h4>
+								<div class="prices">
+									<p class="price">1899</p>
+								</div>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class='medium'>
+					<div class='product-image'>
+						<img src='./assets/img/product (3).jpg'>
+					</div>
+					<div class='product-text'>
+						<h6>Curry powder</h6>
+						<p>Curry powder is a spice mix originating from the Indian subcontinent.</p>
+
+						<div class="d-flex">
+							<p> <b> ₹399 </b> </p>
+							<p class="wrong"> ₹599 </p>
+							<p class="green"> 33% off </p>
+						</div>
+						<button class="btns primary" data-toggle="modal" data-target="#exampleModal"><i
+								class="fa fa-eye" aria-hidden="true"></i></button>
+
+						<button class="btns primary item" style="position: relative; overflow: hidden;">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<div class="content" style="position: absolute;">
+								<h4>RAZER BLADE - FULL HD</h4>
+								<div class="prices">
+									<p class="price">1899</p>
+								</div>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class='large loade'>
+					<div class='product-image'>
+						<img src='./assets/img/product (3).jpg'>
+					</div>
+					<div class='product-text'>
+						<h6>Curry powder</h6>
+						<p>Curry powder is a spice mix originating from the Indian subcontinent.</p>
+
+						<div class="d-flex">
+							<p> <b> ₹399 </b> </p>
+							<p class="wrong"> ₹599 </p>
+							<p class="green"> 33% off </p>
+						</div>
+						<button class="btns primary" data-toggle="modal" data-target="#exampleModal"><i
+								class="fa fa-eye" aria-hidden="true"></i></button>
+
+						<button class="btns primary item" style="position: relative; overflow: hidden;">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<div class="content" style="position: absolute;">
+								<h4>RAZER BLADE - FULL HD</h4>
+								<div class="prices">
+									<p class="price">1899</p>
+								</div>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class='small loade'>
+					<div class='product-image'>
+						<img src='./assets/img/product (3).jpg'>
+					</div>
+					<div class='product-text'>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</div>
+				<div class='medium loade'>
+					<div class='product-image'>
+						<img src='./assets/img/product (3).jpg'>
+					</div>
+					<div class='product-text'>
+						<h6>Curry powder</h6>
+						<p>Curry powder is a spice mix originating from the Indian subcontinent.</p>
+
+						<div class="d-flex">
+							<p> <b> ₹399 </b> </p>
+							<p class="wrong"> ₹599 </p>
+							<p class="green"> 33% off </p>
+						</div>
+						<button class="btns primary" data-toggle="modal" data-target="#exampleModal"><i
+								class="fa fa-eye" aria-hidden="true"></i></button>
+
+						<button class="btns primary item" style="position: relative; overflow: hidden;">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<div class="content" style="position: absolute;">
+								<h4>RAZER BLADE - FULL HD</h4>
+								<div class="prices">
+									<p class="price">1899</p>
+								</div>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class='small loade'>
+					<div class='product-image'>
+						<img src='./assets/img/product (3).jpg'>
+					</div>
+					<div class='product-text'>
+						<h6>Curry powder</h6>
+						<p>Curry powder is a spice mix originating from the Indian subcontinent.</p>
+
+						<div class="d-flex">
+							<p> <b> ₹399 </b> </p>
+							<p class="wrong"> ₹599 </p>
+							<p class="green"> 33% off </p>
+						</div>
+						<button class="btns primary" data-toggle="modal" data-target="#exampleModal"><i
+								class="fa fa-eye" aria-hidden="true"></i></button>
+
+						<button class="btns primary item" style="position: relative; overflow: hidden;">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<div class="content" style="position: absolute;">
+								<h4>RAZER BLADE - FULL HD</h4>
+								<div class="prices">
+									<p class="price">1899</p>
+								</div>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class='large loade'>
+					<div class='product-image'>
+						<img src='./assets/img/product (3).jpg'>
+					</div>
+					<div class='product-text'>
+						<h6>Curry powder</h6>
+						<p>Curry powder is a spice mix originating from the Indian subcontinent.</p>
+
+						<div class="d-flex">
+							<p> <b> ₹399 </b> </p>
+							<p class="wrong"> ₹599 </p>
+							<p class="green"> 33% off </p>
+						</div>
+						<button class="btns primary" data-toggle="modal" data-target="#exampleModal"><i
+								class="fa fa-eye" aria-hidden="true"></i></button>
+
+						<button class="btns primary item" style="position: relative; overflow: hidden;">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<div class="content" style="position: absolute;">
+								<h4>RAZER BLADE - FULL HD</h4>
+								<div class="prices">
+									<p class="price">1899</p>
+								</div>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class='small loade'>
+					<div class='product-image'>
+						<img src='./assets/img/product (3).jpg'>
+					</div>
+					<div class='product-text'>
+						<h6>Curry powder</h6>
+						<p>Curry powder is a spice mix originating from the Indian subcontinent.</p>
+
+						<div class="d-flex">
+							<p> <b> ₹399 </b> </p>
+							<p class="wrong"> ₹599 </p>
+							<p class="green"> 33% off </p>
+						</div>
+						<button class="btns primary" data-toggle="modal" data-target="#exampleModal"><i
+								class="fa fa-eye" aria-hidden="true"></i></button>
+
+						<button class="btns primary item" style="position: relative; overflow: hidden;">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<div class="content" style="position: absolute;">
+								<h4>RAZER BLADE - FULL HD</h4>
+								<div class="prices">
+									<p class="price">1899</p>
+								</div>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class='large loade'>
+					<div class='product-image'>
+						<img src='./assets/img/product (3).jpg'>
+					</div>
+					<div class='product-text'>
+						<h6>Curry powder</h6>
+						<p>Curry powder is a spice mix originating from the Indian subcontinent.</p>
+
+						<div class="d-flex">
+							<p> <b> ₹399 </b> </p>
+							<p class="wrong"> ₹599 </p>
+							<p class="green"> 33% off </p>
+						</div>
+						<button class="btns primary" data-toggle="modal" data-target="#exampleModal"><i
+								class="fa fa-eye" aria-hidden="true"></i></button>
+
+						<button class="btns primary item" style="position: relative; overflow: hidden;">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<div class="content" style="position: absolute;">
+								<h4>RAZER BLADE - FULL HD</h4>
+								<div class="prices">
+									<p class="price">1899</p>
+								</div>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class='medium load'>
+					<div class='product-image'>
+						<img src='./assets/img/product (3).jpg'>
+					</div>
+					<div class='product-text'>
+						<h6>Curry powder</h6>
+						<p>Curry powder is a spice mix originating from the Indian subcontinent.</p>
+
+						<div class="d-flex">
+							<p> <b> ₹399 </b> </p>
+							<p class="wrong"> ₹599 </p>
+							<p class="green"> 33% off </p>
+						</div>
+						<button class="btns primary" data-toggle="modal" data-target="#exampleModal"><i
+								class="fa fa-eye" aria-hidden="true"></i></button>
+						<button class="btns primary add-to-cart" data-name="Demo" data-price="$100"><i
+								class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+					</div>
+				</div>
+				<div class='medium loade'>
+					<div class='product-image'>
+						<img src='./assets/img/product (3).jpg'>
+					</div>
+					<div class='product-text'>
+						<h6>Curry powder</h6>
+						<p>Curry powder is a spice mix originating from the Indian subcontinent.</p>
+
+						<div class="d-flex">
+							<p> <b> ₹399 </b> </p>
+							<p class="wrong"> ₹599 </p>
+							<p class="green"> 33% off </p>
+						</div>
+						<button class="btns primary" data-toggle="modal" data-target="#exampleModal"><i
+								class="fa fa-eye" aria-hidden="true"></i></button>
+						<button class="btns primary add-to-cart" data-name="Demo" data-price="$100"><i
+								class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="">
+		<a href="" class="load-more">Load More</a>
+	</div>
+
+	<!-- Modal -->
+	<div class="product-modal modal fade" id="exampleModal" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="product-image-box">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-md-8 overflow-hidden">
+									<span class='zoom' id='ex1'>
+										<img src='https://images.pexels.com/photos/837500/pexels-photo-837500.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260'
+											width='555' height='320' alt='Daisy on the Ohoopee' />
+
+									</span>
+								</div>
+								<div class="col-md-4">
+									<ul>
+										<li>jhh</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<br>
+									<h4>Mi Notebook 14 Intel Core i5-10210U 10th Gen Thin and Light Laptop(8GB/512GB
+										SSD/Windows 10/Intel UHD Graphics/Silver/1.5Kg), XMA1901-FA+Webcam</h4>
+									<br>
+								</div>
+								<div class="col-md-12">
+									<h6 class="red-color"> ₹ 46,999.00 </h6>
+									<br>
+									<h4>Select Your Size</h4>
+									<hr>
+									<ul class="option">
+										<li class="option-container">
+											<div class="select-option">
+												<label for="radio1">
+													<input name="size" type="radio" id="radio1">
+													<span class="size">sm</span>
+												</label>
+											</div>
+										</li>
+										<li class="option-container">
+											<div class="select-option">
+												<label for="radio2">
+													<input name="size" type="radio" id="radio2">
+													<span class="size">sm</span>
+												</label>
+											</div>
+										</li>
+										<li class="option-container">
+											<div class="select-option">
+												<label for="radio3">
+													<input name="size" type="radio" id="radio3">
+													<span class="size">sm</span>
+												</label>
+											</div>
+										</li>
+										<li class="option-container">
+											<div class="select-option">
+												<label for="radio4">
+													<input name="size" type="radio" id="radio4">
+													<span class="size">sm</span>
+												</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-12">
+									<br>
+									<h4>Select Your Color</h4>
+									<hr>
+									<ul class="option">
+										<li class="option-container">
+											<div class="select-option">
+												<label for="color1">
+													<input name="colors" type="radio" id="color1">
+													<span class="color red"></span>
+												</label>
+											</div>
+										</li>
+										<li class="option-container">
+											<div class="select-option">
+												<label for="color2">
+													<input name="colors" type="radio" id="color2">
+													<span class="color green"></span>
+												</label>
+											</div>
+										</li>
+										<li class="option-container">
+											<div class="select-option">
+												<label for="color3">
+													<input name="colors" type="radio" id="color3">
+													<span class="color blue"></span>
+												</label>
+											</div>
+										</li>
+										<li class="option-container">
+											<div class="select-option">
+												<label for="colo4">
+													<input name="colors" type="radio" id="colo4">
+													<span class="color"></span>
+												</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-12">
+									<h4>Quantity</h4>
+									<hr>
+									<ul class="quantity" id="checkout">
+										<li><input id="quantity" onkeyup="runningTotal()" nam="quantity" type="number"
+												class="form-control" id="exampleInputEmail1"
+												aria-describedby="emailHelp" placeholder="Quantity" value="1"></li>
+
+										<li>
+											<input type="text" id="price" class="form-control" value="350" disabled>
+										</li>
+										<li>
+											<input type="text" id="total" class="form-control" value="350" disabled>
+										</li>
+									</ul>
+
+								</div>
+								<div class="col-md-12 mt-4">
+									<button class="btns primary item" style="position: relative; overflow: hidden;">
+										Add To Cart
+										<div class="content" style="position: absolute;">
+											<h4>RAZER BLADE - FULL HD</h4>
+											<div class="prices">
+												<h3 class="price">1899</h3>
+											</div>
+										</div>
+									</button>
+									<button class="btns primary">Buy Now</button>
+
+								</div>
+								<div class="col-md-8 mt-3">
+									<h4>Details</h4>
+									<hr>
+									<ul>
+										<li>Laptop Processor: 10th Gen Intel Core i7-10510U processor, 1.8 GHz base
+											speed, 4.9 GHz max speed, 4 Cores, 8 threads</li>
+										<li>Operating System in the laptop: Windows 10 Home operating system |
+											Pre-installed software : Office 365 – one month Trial subscription</li>
+										<li>Laptop Display: Horizon Display|14-Inch (1920X 1080 )Full HD Anti-Glare
+											Screen, Nvidia MX350 2GB GDDR5 Graphics</li>
+										<li>Memory Specs (Laptop): 8GB DDR4-2666MHz RAM and Storage: 512 GB PCIE Gen 3x4
+											NVMe SSD</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="modal-footer">
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<!-- Site footer -->
+	<footer class="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-6">
+					<h6>About</h6>
+					<p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to help the
+						upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or
+						snippets as the code wants to be simple. We will help programmers build up concepts in different
+						programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android,
+						SQL and Algorithm.</p>
+				</div>
+
+				<div class="col-xs-6 col-md-3">
+					<h6>Categories</h6>
+					<ul class="footer-links">
+						<li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+						<li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+						<li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+						<li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+						<li><a href="http://scanfcode.com/category/android/">Android</a></li>
+						<li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+					</ul>
+				</div>
+
+				<div class="col-xs-6 col-md-3">
+					<h6>Quick Links</h6>
+					<ul class="footer-links">
+						<li><a href="http://scanfcode.com/about/">About Us</a></li>
+						<li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+						<li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+						<li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+						<li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-6 col-xs-12">
+					<p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
+						<a href="#">Scanfcode</a>.
+					</p>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xs-12 d-flex">
+					<ul class="social-icons">
+						<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+						<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Scripts -->
+	<script type="text/javascript" src="./assets/js/main/jquery.min.js"></script>
+	<script type="text/javascript" src="./assets/js/main/popper.min.js"></script>
+	<script type="text/javascript" src="./assets/js/main/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./assets/js/slick.min.js"></script>
+	<script type="text/javascript" src="./assets/js/highlit.js"></script>
+	<script type="text/javascript" src="./assets/js/cart1.js"></script>
+	<script type="text/javascript" src="./assets/js/jquery.zoom.js"></script>
+	<script type="text/javascript" src="./assets/js/jquery.zoom.min.js"></script>
+	<script type="text/javascript" src="./assets/js/index.js"></script>
+</body>
+
+</html>
